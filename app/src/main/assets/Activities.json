@@ -1,0 +1,73 @@
+{
+  "id": 41,
+  "numOfActivities": 1,
+  "title": "Assorted Default",
+  "version": 1,
+  "Activities": [
+    {
+      "id": 2850,
+      "name": "01",
+      "numOfSteps": 14,
+      "stepImages": [
+        "00.bmp",
+        "01.bmp",
+        "02.bmp",
+        "03.bmp",
+        "04.bmp",
+        "05.bmp",
+        "06.bmp",
+        "07.bmp",
+        "08.bmp",
+        "09.bmp",
+        "10.bmp",
+        "11.bmp",
+        "12.bmp",
+        "13.bmp"
+      ],
+      "animations": {
+        "13.bmp": {
+          "numOfFrames": 22,
+          "animationId": 4667,
+          "directionId": null,
+          "animationImages": [
+            "00.bmp",
+            "01.bmp",
+            "02.bmp",
+            "03.bmp",
+            "04.bmp",
+            "05.bmp",
+            "06.bmp",
+            "07.bmp",
+            "08.bmp",
+            "09.bmp",
+            "10.bmp",
+            "11.bmp",
+            "12.bmp",
+            "13.bmp",
+            "14.bmp",
+            "15.bmp",
+            "16.bmp",
+            "17.bmp",
+            "18.bmp",
+            "19.bmp",
+            "20.bmp",
+            "21.bmp"
+          ]
+        }
+      },
+      "title": "dog",
+      "difficulty": 1,
+      "type": 1,
+      "audioList": [
+        {
+          "stepName": "00",
+          "stepAudioURL": "01#00.mp3"
+        },
+        {
+          "stepName": "13",
+          "stepAudioURL": "01#13.mp3"
+        }
+      ]
+    }
+  ]
+}

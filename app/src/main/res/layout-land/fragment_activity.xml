@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundActivityColor">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ivActivityStartGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ivActivityEndGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <FrameLayout
+        android:id="@+id/flActivityContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin32"
+        android:background="@drawable/sel_activity_image"
+        android:padding="@dimen/margin8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivActivityEndGuide"
+        app:layout_constraintStart_toStartOf="@+id/ivActivityStartGuide"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivActivityContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/backgrounds/scenic" />
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibActivityPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icn_back_idle"
+        app:layout_constraintBottom_toBottomOf="@+id/flActivityContainer"
+        app:layout_constraintEnd_toStartOf="@+id/ivActivityStartGuide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/flActivityContainer" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibActivityNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/icn_next_idle"
+        app:layout_constraintBottom_toBottomOf="@+id/flActivityContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivActivityEndGuide"
+        app:layout_constraintTop_toTopOf="@+id/flActivityContainer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
